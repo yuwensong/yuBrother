@@ -1,0 +1,19 @@
+2017-11-26 17:29:46 | CRITICAL | 1009 | 5a1a898adab82 | 1511688586.897 | Error - type:64 - file:/Library/WebServer/Documents/yuBrother/index.php - line:28 - msg:require(): Failed opening required '/Library/WebServer/Documents/yuBrothervendor/autoload.php' (include_path='.:')
+2017-11-26 19:36:28 | CRITICAL | 1009 | 5a1aa73cf042a | 1511696188.985 | Error - type:1 - file:/Library/WebServer/Documents/yuBrother/index.php - line:42 - msg:Class 'medoo' not found
+2017-11-26 19:38:04 | CRITICAL | 1009 | 5a1aa79c36859 | 1511696284.224 | Error - type:1 - file:/Library/WebServer/Documents/yuBrother/index.php - line:42 - msg:Class 'Medoo' not found
+2017-11-26 19:38:28 | CRITICAL | 1005 | 5a1aa7b48f0b6 | 1511696308.586 | Error - type:1 - file:/Library/WebServer/Documents/yuBrother/index.php - line:42 - msg:Class 'Medoo' not found
+2017-11-26 19:39:49 | CRITICAL | 1009 | 5a1aa805e785c | 1511696389.949 | Error - type:1 - file:/Library/WebServer/Documents/yuBrother/index.php - line:42 - msg:Class 'Medoo\Run' not found
+2017-11-26 19:40:44 | CRITICAL | 1009 | 5a1aa83ccdddd | 1511696444.844 | Error - type:1 - file:/Library/WebServer/Documents/yuBrother/index.php - line:42 - msg:Class 'medoo' not found
+2017-11-26 19:42:11 | CRITICAL | 1005 | 5a1aa8937cd31 | 1511696531.512 | Error - type:1 - file:/Library/WebServer/Documents/yuBrother/index.php - line:42 - msg:Class 'Medoo' not found
+2017-11-26 19:44:24 | CRITICAL | 1005 | 5a1aa918cc5e7 | 1511696664.838 | Error - type:1 - file:/Library/WebServer/Documents/yuBrother/index.php - line:41 - msg:Class 'Medoo' not found
+2017-11-26 19:44:35 | CRITICAL | 1009 | 5a1aa923b983b | 1511696675.760 | Error - type:1 - file:/Library/WebServer/Documents/yuBrother/index.php - line:42 - msg:Class 'Medoo' not found
+2017-11-26 19:44:49 | CRITICAL | 1005 | 5a1aa931d4728 | 1511696689.871 | Error - type:1 - file:/Library/WebServer/Documents/yuBrother/index.php - line:42 - msg:Class 'Medoo' not found
+2017-11-26 19:44:57 | CRITICAL | 1009 | 5a1aa939d95b7 | 1511696697.891 | Error - type:1 - file:/Library/WebServer/Documents/yuBrother/index.php - line:42 - msg:Class 'Medoo' not found
+2017-11-26 19:44:59 | CRITICAL | 1005 | 5a1aa93b63ba8 | 1511696699.409 | Error - type:1 - file:/Library/WebServer/Documents/yuBrother/index.php - line:42 - msg:Class 'Medoo' not found
+2017-11-26 19:46:35 | CRITICAL | 1009 | 5a1aa99bc4bad | 1511696795.810 | Error - type:1 - file:/Library/WebServer/Documents/yuBrother/vendor/catfan/medoo/src/Medoo.php - line:44 - msg:Call to undefined function Medoo\p()
+2017-11-26 19:46:37 | CRITICAL | 1005 | 5a1aa99d566f8 | 1511696797.356 | Error - type:1 - file:/Library/WebServer/Documents/yuBrother/vendor/catfan/medoo/src/Medoo.php - line:44 - msg:Call to undefined function Medoo\p()
+2017-11-26 19:46:52 | CRITICAL | 1009 | 5a1aa9acdfcd1 | 1511696812.917 | Error - type:1 - file:/Library/WebServer/Documents/yuBrother/index.php - line:42 - msg:Class 'medoo\Medoo' not found
+2017-11-26 19:47:34 | CRITICAL | 1005 | 5a1aa9d6344bd | 1511696854.216 | Error - type:1 - file:/Library/WebServer/Documents/yuBrother/vendor/catfan/medoo/src/Medoo.php - line:44 - msg:Call to undefined function Medoo\p()
+2017-11-26 19:47:50 | CRITICAL | 1009 | 5a1aa9e67f2e4 | 1511696870.540 | Error - type:1 - file:/Library/WebServer/Documents/yuBrother/core/lib/model.php - line:8 - msg:Class 'MEDOO' not found
+2017-11-26 20:04:48 | CRITICAL | 1009 | 5a1aade0b7831 | 1511697888.764 | Error - type:1 - file:/Library/WebServer/Documents/yuBrother/App/controller/indexController.php - line:29 - msg:Class 'app\model\yuBrotherModel' not found
+2017-11-26 20:05:18 | CRITICAL | 1005 | 5a1aadfe53b8c | 1511697918.358 | Error - type:1 - file:/Library/WebServer/Documents/yuBrother/App/controller/indexController.php - line:29 - msg:Class 'app\controller\yuBrothersModel' not found
