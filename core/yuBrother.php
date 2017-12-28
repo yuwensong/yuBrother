@@ -2,12 +2,21 @@
 
 namespace core;
 
-use think\Exception;
+use \Exception;
 
+/**
+ * Class yuBrother
+ * 核心类
+ * @package core
+ * @author  wensong.yu
+ * @date 2017-12-28
+ * @contact QQ 719629214
+ */
 class yuBrother
 {
     static public $classMap = array();  //用来装加载了那些类
-    public $assign = array();
+    public $assign = array();   //用来存储变量的数组
+    static public $module;
 
     /**
      * 框架方法
@@ -16,14 +25,15 @@ class yuBrother
     {
         $route = new \core\lib\route();
 
-        $controllerFile = APP . '/controller/' . $route->controller . 'Controller.php';
+        self::$module = $route->module; //设置所走的模块
+
+        $controllerFile = APP .'/'. $route->module . '/controller/' . $route->controller . 'Controller.php';
         if (!is_file($controllerFile)) {
             //抛出异常
             throw new Exception("没找到该类文件：" . $controllerFile);
         }
-
         require_once $controllerFile;
-        $className = "\app\\controller\\" . $route->controller . "Controller";
+        $className = "\app\\" .  $route->module . "\\controller\\" . $route->controller . "Controller";
 
         $controllObj = new $className();
         $action = $route->action;
@@ -68,11 +78,11 @@ class yuBrother
     public function display($file)
     {
         extract($this->assign);
-        $realFile = APP . '/view/' . $file;
+        $realFile = APP . '/' . self::$module .'/view/' . $file;
         if (is_file($realFile)) {
 
             //调用的是twig模版引擎
-            $loader = new \Twig_Loader_Filesystem(APP . "/view");
+            $loader = new \Twig_Loader_Filesystem(APP . '/' . self::$module . "/view");
             $twig = new \Twig_Environment($loader, array(
                 'cache' => YUBROTHER . '/log/twig',
                 'debug' => DEBUG

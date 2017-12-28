@@ -1,7 +1,7 @@
 <?php
 
 /* index.html */
-class __TwigTemplate_51854206dcf17eb5d7ff09ea8715dc4a3d0bb8ff4a1f75df3bc36372d4d2ed5b extends Twig_Template
+class __TwigTemplate_8e289729db6c9a134d6933b45114d280c4ef22b3dda6acfd47a73468392a0579 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -49,6 +49,6 @@ class __TwigTemplate_51854206dcf17eb5d7ff09ea8715dc4a3d0bb8ff4a1f75df3bc36372d4d
     public function getSourceContext()
     {
         return new Twig_Source("
-        <h1>{{ data }}</h1>", "index.html", "/Library/WebServer/Documents/yuBrother/App/view/index.html");
+        <h1>{{ data }}</h1>", "index.html", "/Library/WebServer/Documents/yuBrother/app/admin/view/index.html");
     }
 }

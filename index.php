@@ -16,7 +16,7 @@ define('YUBROTHER', dirname(__FILE__));
 define('CORE', YUBROTHER . '/core');
 
 //定义应用的目录
-define("APP", YUBROTHER . '/App');
+define("APP", YUBROTHER . '/app');
 
 //定义是否开启debug
 define("DEBUG", true);
