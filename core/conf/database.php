@@ -3,7 +3,7 @@ return array(
     'database_type' => 'mysql',
     'database_name' => 'yubrother',
     'server' => 'localhost',
-    'username' => 'root',
-    'password' => 'yuwensong',
+    'username' => 'yuwensong',
+    'password' => 'admin123',
     'charset' => 'utf8'
 );
