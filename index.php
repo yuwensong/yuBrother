@@ -9,14 +9,17 @@
 //设定日期
 date_default_timezone_set('PRC'); //设置中国时区
 
+//设置斜杠常量
+define("DS", DIRECTORY_SEPARATOR);
+
 //定义当前的目录
 define('YUBROTHER', dirname(__FILE__));
 
 //定义核心文件的目录
-define('CORE', YUBROTHER . '/core');
+define('CORE', YUBROTHER . DS . 'core');
 
 //定义应用的目录
-define("APP", YUBROTHER . '/app');
+define("APP", YUBROTHER . DS . 'app');
 
 //定义是否开启debug
 define("DEBUG", true);
@@ -24,15 +27,18 @@ define("DEBUG", true);
 //是否开启最优雅的错误调试方式
 define("DEBUG_GOODS", true);
 
+//这里配置主题目录
+define("ADMIN_THEME", DS . 'public/gentelella');
+
 //设置seaslog的目录
 //SeasLog::setBasePath(YUBROTHER . '/log');
 
 //加载第三方的php类库
-require(YUBROTHER.'/vendor/autoload.php');
+require(YUBROTHER . '/vendor/autoload.php');
 
 if (DEBUG) {
 
-    if(DEBUG_GOODS){
+    if (DEBUG_GOODS) {
         //处理错误最优雅的方式
         $whoops = new \Whoops\Run;
         $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
