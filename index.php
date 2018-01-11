@@ -25,7 +25,7 @@ define("DEBUG", true);
 define("DEBUG_GOODS", true);
 
 //设置seaslog的目录
-SeasLog::setBasePath(YUBROTHER . '/log');
+//SeasLog::setBasePath(YUBROTHER . '/log');
 
 //加载第三方的php类库
 require(YUBROTHER.'/vendor/autoload.php');
