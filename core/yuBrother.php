@@ -18,11 +18,6 @@ class yuBrother
     public $assign = array();   //用来存储变量的数组
     static public $module;
 
-    public function __construct()
-    {
-        $this->assign('yu_borther_admin_theme', ADMIN_THEME );
-    }
-
     /**
      * 框架方法
      */

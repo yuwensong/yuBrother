@@ -1,9 +1,7 @@
 <?php
 namespace app\admin\controller;
 
-use core\yuBrother;
-
-class indexController extends yuBrother
+class indexController extends baseController
 {
     public function index(){
         $data = "admin hello world";
