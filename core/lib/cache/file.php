@@ -1,5 +1,14 @@
 <?php
-class FileCache
+namespace core\lib\cache;
+
+/**
+ * 文件缓存类
+ * Class FileCache
+ * @package core\lib
+ * @author yuwensong
+ * @datetime 2018-01-11 10:09:00
+ */
+class file
 {
     /**
      * @var string a string prefixed to every cache key. This is needed when you store

@@ -27,13 +27,13 @@ class yuBrother
 
         self::$module = $route->module; //设置所走的模块
 
-        $controllerFile = APP .'/'. $route->module . '/controller/' . $route->controller . 'Controller.php';
+        $controllerFile = APP . '/' . $route->module . '/controller/' . $route->controller . 'Controller.php';
         if (!is_file($controllerFile)) {
             //抛出异常
             throw new Exception("没找到该类文件：" . $controllerFile);
         }
         require_once $controllerFile;
-        $className = "\app\\" .  $route->module . "\\controller\\" . $route->controller . "Controller";
+        $className = "\app\\" . $route->module . "\\controller\\" . $route->controller . "Controller";
 
         $controllObj = new $className();
         $action = $route->action;
@@ -78,16 +78,18 @@ class yuBrother
     public function display($file)
     {
         extract($this->assign);
-        $realFile = APP . '/' . self::$module .'/view/' . $file;
+        //文件的绝对路径
+        $filePath = APP . DS . self::$module . DS . 'view' . DS;
+        $realFile = $filePath . $file; //文件的全部路径包括文件
         if (is_file($realFile)) {
 
             //调用的是twig模版引擎
-            $loader = new \Twig_Loader_Filesystem(APP . '/' . self::$module . "/view");
+            $loader = new \Twig_Loader_Filesystem($filePath);
             $twig = new \Twig_Environment($loader, array(
                 'cache' => YUBROTHER . '/log/twig',
                 'debug' => DEBUG
             ));
-            $template = $twig->loadTemplate('index.html');
+            $template = $twig->loadTemplate($file);
             $template->display($this->assign ? $this->assign : '');
         }
     }
