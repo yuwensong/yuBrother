@@ -22,6 +22,8 @@ class baseController extends yuBrother
     public function setCommonParams()
     {
         //主题目录路径
-        $this->assign('yu_borther_admin_theme', ADMIN_THEME );
+        $this->assign('yu_brother_theme', THEME );
+        $this->assign('yu_brother_admin_public', ADMIN_PUBLIC );
+        $this->assign('yu_brother_home_public', HOME_PUBLIC );
     }
 }
