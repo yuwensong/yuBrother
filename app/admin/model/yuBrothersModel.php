@@ -1,5 +1,5 @@
 <?php
-namespace app\model;
+namespace app\admin\model;
 
 use core\lib\model;
 
