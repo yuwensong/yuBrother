@@ -2,7 +2,6 @@
 
 namespace core\lib;
 
-use core\lib\conf;
 use \Medoo\Medoo;
 
 class model extends MEDOO

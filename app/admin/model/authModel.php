@@ -1,17 +1,19 @@
 <?php
-namespace core\lib;
 
+namespace app\admin\model;
 
-/**
- * Class Auth
- * @package core\lib
- * 权限认证类
- */
+use core\lib\model;
+use core\lib\conf;
 
-class auth{
+class authModel extends model
+{
     //默认配置
     protected $_config = array();
-    public function __construct() {
+
+    public function __construct()
+    {
+        parent::__construct();
+
         //获取权限认证类
         $authConfig = conf::all('auth');
         if (!empty($authConfig) && is_array($authConfig)) {
@@ -29,7 +31,8 @@ class auth{
      * @param string $relation
      * @return bool
      */
-    public function check($name, $uid, $relation='or') {
+    public function check($name, $uid, $relation = 'or')
+    {
         if (!$this->_config['AUTH_ON'])
             return true;
         $authList = $this->getAuthList($uid);
@@ -45,11 +48,11 @@ class auth{
             if (in_array($val, $name))
                 $list[] = $val;
         }
-        if ($relation=='or' and !empty($list)) {
+        if ($relation == 'or' and !empty($list)) {
             return true;
         }
         $diff = array_diff($name, $list);
-        if ($relation=='and' and empty($diff)) {
+        if ($relation == 'and' and empty($diff)) {
             return true;
         }
         return false;
@@ -61,27 +64,34 @@ class auth{
      * @param $uid
      * @return mixed
      */
-    public function getGroups($uid) {
+    public function getGroups($uid)
+    {
         static $groups = array();
         if (isset($groups[$uid]))
             return $groups[$uid];
-        $user_groups = M()->table($this->_config['AUTH_GROUP_ACCESS'] . ' a')
-            ->where("a.uid='$uid' and g.status='1'")
-            ->join($this->_config['AUTH_GROUP']." g on a.group_id=g.id")
-            ->select();
-        $groups[$uid]=$user_groups?$user_groups:array();
+
+        $userGroups = $this->select(
+            $this->_config['AUTH_GROUP_ACCESS'] . ' (a)',
+            ["[>]" . $this->_config['AUTH_GROUP'] . " (g)" => "a.group_id=g.id",],
+            ['g.uid', 'a.id', 'a.title'],
+            ['a.uid' => $uid, 'g.status' => 1]
+        );
+
+        //echo $this->last();
+        $groups[$uid] = $userGroups ? $userGroups : array();
         return $groups[$uid];
     }
 
 
     //获得权限列表
-    protected function getAuthList($uid) {
+    protected function getAuthList($uid)
+    {
         static $_authList = array();
         if (isset($_authList[$uid])) {
             return $_authList[$uid];
         }
-        if(isset($_SESSION['_AUTH_LIST_'.$uid])){
-            return $_SESSION['_AUTH_LIST_'.$uid];
+        if (isset($_SESSION['_AUTH_LIST_' . $uid])) {
+            return $_SESSION['_AUTH_LIST_' . $uid];
         }
         //读取用户所属用户组
         $groups = $this->getGroups($uid);
@@ -95,9 +105,9 @@ class auth{
             return array();
         }
         //读取用户组所有权限规则
-        $map=array(
-            'id'=>array('in',$ids),
-            'status'=>1
+        $map = array(
+            'id' => array('in', $ids),
+            'status' => 1
         );
         $rules = M()->table($this->_config['AUTH_RULE'])->where($map)->select();
         //循环规则，判断结果。
@@ -118,17 +128,22 @@ class auth{
             }
         }
         $_authList[$uid] = $authList;
-        if($this->_config['AUTH_TYPE']==2){
+        if ($this->_config['AUTH_TYPE'] == 2) {
             //session结果
-            $_SESSION['_AUTH_LIST_'.$uid]=$authList;
+            $_SESSION['_AUTH_LIST_' . $uid] = $authList;
         }
         return $authList;
     }
+
     //获得用户资料,根据自己的情况读取数据库
-    protected function getUserInfo($uid) {
-        static $userinfo=array();
-        if(!isset($userinfo[$uid])){
-            $userinfo[$uid]=M()->table($this->_config['AUTH_USER'])->find($uid);
+    public function getUserInfo($uid)
+    {
+        static $userinfo = array();
+        if (!isset($userinfo[$uid])) {
+            $userinfo[$uid] = $this->select($this->_config['AUTH_USER'],
+                "*",
+                ['id' => $uid]
+            );
         }
         return $userinfo[$uid];
     }
