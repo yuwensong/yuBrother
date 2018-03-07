@@ -105,11 +105,17 @@ class authModel extends model
             return array();
         }
         //读取用户组所有权限规则
-        $map = array(
+        /*$map = array(
             'id' => array('in', $ids),
             'status' => 1
-        );
-        $rules = M()->table($this->_config['AUTH_RULE'])->where($map)->select();
+        );*/
+        //$rules = M()->table($this->_config['AUTH_RULE'])->where($map)->select();
+        $rules = $this->select(
+                                $this->_config['AUTH_RULE'],
+                                ['name', 'title', 'id'],
+                                ['id' => $ids]
+            );
+
         //循环规则，判断结果。
         $authList = array();
         foreach ($rules as $r) {

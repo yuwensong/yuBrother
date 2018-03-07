@@ -9,7 +9,7 @@ class userController extends baseController
 
         $new = new \app\admin\model\authModel();
         //var_dump($new->getGroups(100));
-        var_dump($new->getUserInfo(100));
+        //var_dump($new->getAuthList(100));
         $this->display("user/index.html");
     }
 }
