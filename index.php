@@ -28,7 +28,13 @@ define("DEBUG", true);
 define("DEBUG_GOODS", true);
 
 //这里配置主题目录
-define("ADMIN_THEME", DS . 'public/gentelella');
+define("THEME", DS . 'public' . DS . 'gentelella');
+
+//后台自己的路径
+define("ADMIN_PUBLIC", DS . 'public' . DS . 'admin');
+
+//前台自己的路径
+define("HOME_PUBLIC", DS . 'public' . DS . 'home');
 
 //设置seaslog的目录
 //SeasLog::setBasePath(YUBROTHER . '/log');
