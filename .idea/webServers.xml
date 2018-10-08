@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a66d03d3-150f-44d0-b0d9-acca25524f87" name="yycc.yuqingwan.com" url="http://yycc.yuqingwan.com">
+        <fileTransfer host="yycc.yuqingwan.com" port="22" rootFolder="/usr/local/apache/htdocs/yycc" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="cfdfb1cf-89d9-4843-94f5-120c1f4208a7" name="php6.wangcaicat.com" url="http://php6.wangcaicat.com">
+        <fileTransfer host="php6.wangcaicat.com" port="22" rootFolder="/var/www/yu/php6.zaixiaoqu.com/public_html" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

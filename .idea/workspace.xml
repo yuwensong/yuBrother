@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6d2e3cb1-9cb8-451d-9120-ae85e95cfbdf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/view/common/index.html" afterPath="$PROJECT_DIR$/app/admin/view/common/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/view/user/index.html" afterPath="$PROJECT_DIR$/app/admin/view/user/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,24 +23,40 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>right_col</find>
-      <find>top_nav</find>
-      <find>..</find>
-      <find>left_col</find>
-      <find>yu_borther_admin_theme</find>
-      <find>yu_borther_theme</find>
-      <find>lo</find>
-      <find>borther</find>
-      <find>{{ yu_brother_admin_public }}</find>
-      <find>General</find>
-      <find>load</find>
-      <find>YUBROTHER</find>
-      <find>datatable</find>
-      <find>id=&quot;datatable</find>
+      <find>yycc</find>
+      <find>dongdong.yu</find>
+      <find>PROTOCL</find>
+      <find>web</find>
+      <find>IS_DB_LOCAL_OFFICIAL_NOCGTEST</find>
+      <find>my/test</find>
+      <find>qaadmin.alphacaijing.com</find>
+      <find>web/</find>
+      <find>https</find>
+      <find>域名设置不正确。</find>
+      <find>$isHttps</find>
+      <find>CLIENT_REAL_IP</find>
+      <find>301 Moved Permanently</find>
+      <find>IS_WANGCAICAT</find>
+      <find>域名设置不正确</find>
+      <find>ROOT_DOMAIN</find>
+      <find>$site_config</find>
+      <find>print_r</find>
+      <find>getSubDomain</find>
+      <find>echo</find>
+      <find>http</find>
+      <find>301</find>
+      <find>test</find>
+      <find>login_check</find>
+      <find>用户名或者登录密码错误</find>
+      <find>getClientIp</find>
+      <find>get_client_ip</find>
+      <find>datetime</find>
+      <find>op</find>
+      <find>op(</find>
     </findStrings>
     <replaceStrings>
       <replace>/public/gentelella</replace>
@@ -51,6 +65,10 @@
       <replace>yu_brother_theme</replace>
       <replace>brother</replace>
       <replace>{{ yu_brother_admin_public }}/</replace>
+      <replace>yyccdmin.yuqingwan.com</replace>
+      <replace>yuwensong</replace>
+      <replace>yyccadmin.yuqingwan.com</replace>
+      <replace>IS_WANGCAICAT</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/public/gentelella</dir>
@@ -98,6 +116,14 @@
         <option value="$PROJECT_DIR$/app/admin/view/common/index.html" />
         <option value="$PROJECT_DIR$/app/admin/view/user/index.html" />
         <option value="$PROJECT_DIR$/app/admin/view/common/footer.html" />
+        <option value="&lt;a66d03d3-150f-44d0-b0d9-acca25524f87&gt;/application/my-extensions/package/local/My/Test.php" />
+        <option value="&lt;cfdfb1cf-89d9-4843-94f5-120c1f4208a7&gt;/web/index.php" />
+        <option value="&lt;cfdfb1cf-89d9-4843-94f5-120c1f4208a7&gt;/config.php" />
+        <option value="&lt;a66d03d3-150f-44d0-b0d9-acca25524f87&gt;/index.php" />
+        <option value="&lt;a66d03d3-150f-44d0-b0d9-acca25524f87&gt;/web/index.php" />
+        <option value="&lt;a66d03d3-150f-44d0-b0d9-acca25524f87&gt;/application/my-extensions/package/community/Test/Wensong.php" />
+        <option value="&lt;a66d03d3-150f-44d0-b0d9-acca25524f87&gt;/config.php" />
+        <option value="&lt;a66d03d3-150f-44d0-b0d9-acca25524f87&gt;/application/controllers/adminnew/loginnew.php" />
       </list>
     </option>
   </component>
@@ -141,7 +167,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -150,42 +175,23 @@
               <item name="yuBrother" type="b2602c69:ProjectViewProjectNode" />
               <item name="yuBrother" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="yuBrother" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuBrother" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="yuBrother" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuBrother" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="yuBrother" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuBrother" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="yuBrother" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuBrother" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -232,12 +238,32 @@
       <workItem from="1519910693358" duration="5178000" />
       <workItem from="1520429301667" duration="1805000" />
       <workItem from="1520513292230" duration="4705000" />
-      <workItem from="1522068716656" duration="620000" />
+      <workItem from="1522068716656" duration="2864000" />
+      <workItem from="1522240631777" duration="6850000" />
+      <workItem from="1522328177188" duration="4603000" />
+      <workItem from="1522470351843" duration="5427000" />
+      <workItem from="1522760154027" duration="3975000" />
+      <workItem from="1525359064254" duration="715000" />
+      <workItem from="1526093260088" duration="12000" />
+      <workItem from="1526093295378" duration="5000" />
+      <workItem from="1526093488843" duration="897000" />
+      <workItem from="1526111638583" duration="14000" />
+      <workItem from="1526111768896" duration="3503000" />
+      <workItem from="1526564659143" duration="121000" />
+      <workItem from="1526565498265" duration="67000" />
+      <workItem from="1526566922096" duration="705000" />
+      <workItem from="1526692954286" duration="23000" />
+      <workItem from="1531029052314" duration="21000" />
+      <workItem from="1531032740791" duration="1462000" />
+      <workItem from="1531795208223" duration="5000" />
+      <workItem from="1531811836345" duration="29000" />
+      <workItem from="1532570105416" duration="5000" />
+      <workItem from="1536917403995" duration="149000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42568000" />
+    <option name="totallyTimeSpent" value="73400000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -251,20 +277,22 @@
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24248926" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21387696" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24248926" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06223176" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26780626" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06223176" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22649573" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -534,7 +562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="19" column="93" lean-forward="false" selection-start-line="19" selection-start-column="93" selection-end-line="19" selection-end-column="93" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -542,7 +569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -550,7 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="740" column="51" lean-forward="false" selection-start-line="740" selection-start-column="42" selection-end-line="740" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -558,7 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -566,9 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding>
-            <element signature="n#table#0;n#div#1;n#div#0;n#div#5;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -576,7 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
